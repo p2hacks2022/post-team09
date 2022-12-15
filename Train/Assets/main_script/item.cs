@@ -8,6 +8,7 @@ public class item : MonoBehaviour
 {
     bool isFlag = false;
     int click = 0;
+    int count = 0;
     public GameObject text;
     public Text textText;
     public String itemName;
@@ -26,23 +27,27 @@ public class item : MonoBehaviour
     void Update()
     {
         if(isFlag == true){
-            if(Input.GetKeyDown (KeyCode.F)){
+            if(Input.GetKeyDown(KeyCode.F)){
+                
                 itemName = this.gameObject.name;
-                textText.text = GetItem (itemName).GetText();//sentence(this.text);
+                textText.text = GetItem(itemName).GetText();//sentence(this.text);
                 text.SetActive(true);
+                ItemManager.instance.itemCount = 1;
+                
                 
             }
             if (Input.GetMouseButtonDown(0)){
                 click++;
             }
-/*
+
             if(click == 1){
-                if(textText.text.Contains(2)){
+                //Debug.Log(textText.text.Contains(""));
+                if(textText.text.Contains("")){
                     text.SetActive(false);
                 }
-                textText.text = GetItem (itemName).GetText2();
+                textText.text = GetItem(itemName).GetText2();
             }
-            */
+            
             /*
             if(click == 2){
                 if(textText.text.Contains(2)){
@@ -103,7 +108,7 @@ public class item : MonoBehaviour
 
 
 	//　名前でアイテムを取得
-	public ItemData GetItem(string searchName) {
+	public ItemData GetItem(string searchName){
 		return itemDataBase.GetItemLists().Find(itemName => itemName.GetItemName() == searchName);
 	}
     
