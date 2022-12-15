@@ -1,41 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ 
 public class MoveCharactorController : MonoBehaviour
 {
-    private float speed = 0.005f;
-    private SpriteRenderer renderer;
-
+    Rigidbody2D rb;
+    private float speed;
+    private float input;
+    private bool isRight;
+    Animator anim;
+ 
     void Start()
     {
-        renderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        speed = 1.5f;
     }
-
+ 
     void Update()
     {
-        Vector2 position = transform.position;
-
-        if (Input.GetKey("a"))
+        input = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(input* speed, rb.velocity.y);
+ 
+        //Runのアニメーション
+        if(input != 0)
         {
-            position.x -= speed;
-            renderer.flipX = true;
-            
+            anim.SetBool("isWalk", true);
         }
-        else if (Input.GetKey("d"))
+        else
         {
-            position.x += speed;
-            renderer.flipX = false;
+            anim.SetBool("isWalk", false);
         }
-        else if (Input.GetKey("w"))
+ 
+        //向きを変える
+        if(input > 0)
         {
-            position.y += speed;
+            transform.eulerAngles = new Vector3(0,0,0);
+            isRight = true;
         }
-        else if (Input.GetKey("s"))
+        else if(input < 0)
         {
-            position.y -= speed;
-        }
-
-        transform.position = position;
+            transform.eulerAngles = new Vector3(0,180,0);
+            isRight = false;
+        } 
     }
 }
