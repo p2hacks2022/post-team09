@@ -64,31 +64,34 @@ public class ItemData : ScriptableObject {
 	}
 
 	public string GetText3() {
-		return text;
+		return text3;
 	}
 
 	public string GetText4() {
-		return text2;
+		return text4;
 	}
+
 	public string GetText5() {
-		return text;
+		return text5;
 	}
 
 	public string GetText6() {
-		return text2;
+		return text6;
 	}
+
 	public string GetText7() {
-		return text;
+		return text7;
 	}
 
 	public string GetText8() {
-		return text2;
+		return text8;
 	}
+
 	public string GetText9() {
-		return text;
+		return text9;
 	}
 
 	public string GetText10() {
-		return text2;
+		return text10;
 	}
 }
