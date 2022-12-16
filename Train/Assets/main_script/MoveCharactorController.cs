@@ -1,47 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- 
 public class MoveCharactorController : MonoBehaviour
 {
-    Rigidbody2D rb;
-    private float speed;
-    private float input;
-    private bool isRight;
-    Animator anim;
- 
-    void Start()
+    [SerializeField] private float speed;
+    [SerializeField] GameObject panel;
+    private Rigidbody2D body;
+    private Animator anim;
+    private Vector2 movement;
+    private void Awake()
     {
+        body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-        speed = 1.5f;
+        panel.SetActive(false);
     }
- 
-    void Update()
+    private void Update()
     {
-        input = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(input* speed, rb.velocity.y);
- 
-        //Runのアニメーション
-        if(input != 0)
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        anim.SetBool("isWalk", movement != Vector2.zero);
+        if (movement != Vector2.zero)
         {
-            anim.SetBool("isWalk", true);
+            anim.SetFloat("X", movement.x);
+            anim.SetFloat("Y", movement.y);
+            //Debug.Log(movement.x);
         }
-        else
+    }
+    private void FixedUpdate()
+    {
+        body.MovePosition(body.position + movement.normalized * speed * Time.fixedDeltaTime);
+    }
+
+//はいいいえ表示
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.name == "Gate")
         {
-            anim.SetBool("isWalk", false);
+            panel.SetActive(true);
         }
- 
-        //向きを変える
-        if(input > 0)
-        {
-            transform.eulerAngles = new Vector3(0,0,0);
-            isRight = true;
-        }
-        else if(input < 0)
-        {
-            transform.eulerAngles = new Vector3(0,180,0);
-            isRight = false;
-        } 
     }
 }

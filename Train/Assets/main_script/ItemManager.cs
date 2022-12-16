@@ -18,6 +18,5 @@ public class ItemManager : MonoBehaviour
          {
              Destroy(this.gameObject);
          }
-         Debug.Log(itemCount);
      }
 }

@@ -10,6 +10,7 @@ public class item : MonoBehaviour
     int click = 0;
     int count = 0;
     public GameObject text;
+    public GameObject itemObject;
     public Text textText;
     public String itemName;
 
@@ -28,11 +29,11 @@ public class item : MonoBehaviour
     {
         if(isFlag == true){
             if(Input.GetKeyDown(KeyCode.F)){
-                
-                itemName = this.gameObject.name;
+                itemObject = this.gameObject;
+                itemName = itemObject.name;
                 textText.text = GetItem(itemName).GetText();//sentence(this.text);
                 text.SetActive(true);
-                ItemManager.instance.itemCount = 1;
+                ItemManager.instance.itemCount += 1;
                 
                 
             }
@@ -42,55 +43,69 @@ public class item : MonoBehaviour
 
             if(click == 1){
                 //Debug.Log(textText.text.Contains(""));
-                if(textText.text.Contains("")){
-                    text.SetActive(false);
-                }
                 textText.text = GetItem(itemName).GetText2();
-            }
-            
-            /*
-            if(click == 2){
-                if(textText.text.Contains(2)){
+                if(textText.text == ""){
+                    //Debug.Log(textText.text);
                     text.SetActive(false);
+                    itemObject.SetActive(false);
                 }
-                textText.text = GetItem (itemName).GetText3();
-            }if(click == 3){
-                if(textText.text.Contains(2)){
-                    text.SetActive(true);
-                }
-                textText.text = GetItem (itemName).GetText4();
-            }if(click == 4){
-                textText.text = GetItem (itemName).GetText5();
+            }
+            if(click == 2){
+                textText.text = GetItem(itemName).GetText3();
                 if(textText.text == ""){
                     text.SetActive(false);
-                }
-            }if(click == 5){
-                textText.text = GetItem (itemName).GetText6();
-                if(textText.text == null){
-                    text.SetActive(false);
-                }
-            }if(click == 6){
-                textText.text = GetItem (itemName).GetText7();
-                if(textText.text == null){
-                    text.SetActive(false);
-                }
-            }if(click == 7){
-                textText.text = GetItem (itemName).GetText8();
-                if(textText.text == null){
-                    text.SetActive(false);
-                }
-            }if(click == 8){
-                textText.text = GetItem (itemName).GetText9();
-                if(textText.text == null){
-                    text.SetActive(false);
-                }
-            }if(click == 9){
-                textText.text = GetItem (itemName).GetText10();
-                if(textText.text == null){
-                    text.SetActive(false);
+                    itemObject.SetActive(false);
                 }
             }
-            */
+            if(click == 3){
+                textText.text = GetItem(itemName).GetText4();
+                if(textText.text == ""){
+                    text.SetActive(false);
+                    itemObject.SetActive(false);
+                }
+            }
+            if(click == 4){
+                textText.text = GetItem(itemName).GetText5();
+                if(textText.text == ""){
+                    text.SetActive(false);
+                    itemObject.SetActive(false);
+                }
+            }
+            if(click == 5){
+                textText.text = GetItem(itemName).GetText6();
+                if(textText.text == ""){
+                    text.SetActive(false);
+                    itemObject.SetActive(false);
+                }
+            }
+            if(click == 6){
+                textText.text = GetItem(itemName).GetText7();
+                if(textText.text == ""){
+                    text.SetActive(false);
+                    itemObject.SetActive(false);
+                }
+            }
+            if(click == 7){
+                textText.text = GetItem(itemName).GetText8();
+                if(textText.text == ""){
+                    text.SetActive(false);
+                    itemObject.SetActive(false);
+                }
+            }
+            if(click == 8){
+                textText.text = GetItem(itemName).GetText9();
+                if(textText.text == ""){
+                    text.SetActive(false);
+                    itemObject.SetActive(false);
+                }
+            }
+            if(click == 9){
+                textText.text = GetItem(itemName).GetText10();
+                if(textText.text == ""){
+                    text.SetActive(false);
+                    itemObject.SetActive(false);
+                }
+            }
 
         }
        
@@ -111,14 +126,4 @@ public class item : MonoBehaviour
 	public ItemData GetItem(string searchName){
 		return itemDataBase.GetItemLists().Find(itemName => itemName.GetItemName() == searchName);
 	}
-    
-    
-    /*
-    public GameObject gameObject;
-
-    if(hoge == true)
-    {
-        gameObject.SetActive(true);
-    }
-    */
 }
