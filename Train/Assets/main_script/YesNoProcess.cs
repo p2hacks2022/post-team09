@@ -11,7 +11,7 @@ public class YesNoProcess : MonoBehaviour
     {
         YesNoMsg msg = GameObject.Find("YesNoMsg").GetComponent<YesNoMsg>();
         msg.showMsg("駅に行きますか?", 
-            () => { SceneManager.LoadScene("Current"); },
+            () => {Initiate.Fade("Current", Color.black, 1.0f); },
             () => { });
     }
 }

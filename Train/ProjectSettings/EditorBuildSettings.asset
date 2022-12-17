@@ -5,10 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Nishimura/Current.unity
     guid: a5f33867625065040bf1d65ff7904304
+  - enabled: 1
+    path: Assets/Scenes/Nishimura/tyuuou_main 3.unity
+    guid: 5605d3aa0ec723c4f841fe552d28b20d
+  - enabled: 1
+    path: Assets/Scenes/Yasui/main_map.unity
+    guid: 638d578b00e951841a41068506b6cff7
   m_configObjects: {}
