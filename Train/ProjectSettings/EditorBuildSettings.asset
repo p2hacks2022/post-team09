@@ -5,7 +5,40 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/Nishimura/Current.unity
+    guid: a5f33867625065040bf1d65ff7904304
+  - enabled: 0
+    path: Assets/Scenes/Nishimura/tyuuou_main 3.unity
+    guid: 5605d3aa0ec723c4f841fe552d28b20d
+  - enabled: 1
+    path: Assets/Scenes/yasui/title3.unity
+    guid: 3b072b03bb2bbd54089be04cb01b3309
+  - enabled: 1
+    path: Assets/Scenes/Nishimura/TrueEnd.unity
+    guid: 6a3277f2a81fc49429b25f05f6bae381
+  - enabled: 1
+    path: Assets/Scenes/Nishimura/BadEnd.unity
+    guid: fbe02d155a5128946a996b09b0d75afe
+  - enabled: 1
+    path: Assets/Scenes/Nishimura/tyuuou_main 4.unity
+    guid: 62b2db656ced9e148833218a0070f5aa
+  - enabled: 1
+    path: Assets/Scenes/Nishimura/NormalCurrent 1.unity
+    guid: 8bd047ccb56b8a346b9c7f6fbee23bca
+  - enabled: 1
+    path: Assets/Scenes/Nishimura/NormalEnd.unity
+    guid: 59d6a557e5ddda84598285c2d6d76521
+  - enabled: 1
+    path: Assets/Scenes/Nishimura/prologue.unity
+    guid: ac70386a3dfb045438c3243b10090c23
+  - enabled: 1
+    path: Assets/Scenes/Nishimura/Current 1.unity
+    guid: bfe80f922ca75ac428a512317200ec0d
+  - enabled: 1
+    path: Assets/Scenes/Nishimura/Start 1.unity
+    guid: 89f6404c207db1e44915722fb6c9ed50
   m_configObjects: {}

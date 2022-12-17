@@ -38,6 +38,33 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: test
+    uniqueID: 3840168297
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 4005337139
+    locked: 0
+  - name: items
+    uniqueID: 3474834253
+    locked: 0
+  - name: Light
+    uniqueID: 2464973385
+    locked: 0
+  - name: chara
+    uniqueID: 2250512041
+    locked: 0
+  - name: frontground
+    uniqueID: 3992482761
+    locked: 0
+  - name: UI
+    uniqueID: 3652685075
+    locked: 0
+  - name: ButtonImage
+    uniqueID: 2305806343
+    locked: 0
+  - name: CloseButtonImage
+    uniqueID: 377897355
     locked: 0
