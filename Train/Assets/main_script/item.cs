@@ -9,6 +9,7 @@ public class item : MonoBehaviour
     bool isFlag = false;
     int click = 0;
     int count = 0;
+    int objectNumber = 16;
     public GameObject text;
     public GameObject itemObject;
     public Text textText;
@@ -27,13 +28,17 @@ public class item : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(isFlag);
+        ItemManager.instance.n = objectNumber;
         if(isFlag == true){
             if(Input.GetKeyDown(KeyCode.F)){
                 itemObject = this.gameObject;
                 itemName = itemObject.name;
                 textText.text = GetItem(itemName).GetText();//sentence(this.text);
                 text.SetActive(true);
-                ItemManager.instance.itemCount += 1;
+                objectNumber = GetItem(itemName).GetId();
+                //Debug.Log(objectNumber);
+                ItemManager.instance.n = objectNumber;
                 
                 
             }
