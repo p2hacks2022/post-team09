@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kindOfItem: 0
   icon: {fileID: 0}
+  id: 8
   itemName: key
+  Name: "\u30AB\u30AE"
   text: "\u30AB\u30AE\u3060\u3002"
   text2: "\u898B\u305F\u3053\u3068\u3042\u308B\u30AD\u30FC\u30DB\u30EB\u30C0\u30FC\u304C\u3064\u3044\u3066\u3044\u308B\u3002"
   text3: 

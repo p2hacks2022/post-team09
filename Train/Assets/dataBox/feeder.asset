@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kindOfItem: 0
   icon: {fileID: 0}
-  itemName: feedr
-  text: "\u306D\u3053\u306E\u30A8\u30B5\u5165\u308C\u3060\u3002"
+  id: 4
+  itemName: feeder
+  Name: "\u3054\u306F\u3093\u5165\u308C"
+  text: "\u306D\u3053\u306E\u3054\u306F\u3093\u5165\u308C\u3060\u3002"
   text2: "\u3044\u307E\u306F\u4F7F\u308F\u308C\u3066\u3044\u306A\u3044\u307F\u305F\u3044\u3002"
   text3: 
   text4: 

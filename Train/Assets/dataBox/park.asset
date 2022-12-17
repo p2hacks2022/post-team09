@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kindOfItem: 0
   icon: {fileID: 0}
+  id: 6
   itemName: park
+  Name: "\u516C\u5712"
   text: "\u3042\u3063\u3061\u306B\u516C\u5712\u304C\u3042\u308B\u3002"
-  text2: "\u304A\u306B\u3044\u3061\u3083\u3093\u3068\u3088\u304F\u904A\u3093\u3060\u306A\u3002"
+  text2: "\u304A\u306B\u3044\u3061\u3083\u3093\u3068\u3088\u304F\u904A\u3076\u5834\u6240\u3002"
   text3: 
   text4: 
   text5: 

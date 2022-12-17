@@ -6,6 +6,7 @@ public class ItemManager : MonoBehaviour
 {
    public static ItemManager instance = null;
    public int n = 16;
+   public int itemCountManager = 0;
    public int[] array = new int[17];
 
 

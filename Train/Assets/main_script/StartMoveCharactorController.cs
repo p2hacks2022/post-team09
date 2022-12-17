@@ -40,7 +40,10 @@ public class StartMoveCharactorController : MonoBehaviour
         else
         {
             movement.x = 0;
-            Initiate.Fade("tyuuou_main 3", Color.black, 1.0f);
+            //Initiate.Fade("tyuuou_main 4", Color.black, 1.0f);
+            //StartCoroutine(DelayCoroutine());
+            StartCoroutine(DelayCoroutine());
+            
         }
 
 
@@ -49,7 +52,23 @@ public class StartMoveCharactorController : MonoBehaviour
             anim.SetFloat("X", movement.x);
             anim.SetFloat("Y", movement.y);
         }
+
+        
     }
+
+    IEnumerator DelayCoroutine()
+    {
+            //transform.position = Vector3.one;
+
+            // 3秒間待つ
+            yield return new WaitForSeconds(1);
+
+            panel.SetActive(true);
+
+            // 3秒後に原点にワープ
+            //transform.position = Vector3.zero;
+    }
+
     private void FixedUpdate()
     {
         body.MovePosition(body.position + movement.normalized * speed * Time.fixedDeltaTime);
