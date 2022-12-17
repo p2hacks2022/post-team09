@@ -38,5 +38,13 @@ public class MoveCharactorController : MonoBehaviour
         {
             panel.SetActive(true);
         }
+        else if(other.gameObject.name == "EndGate")
+        {
+            Initiate.Fade("badEnd", Color.black, 1.0f);
+        }
+        else if(other.gameObject.name == "NormalEndGate" )
+        {
+            Initiate.Fade("normalEnd", Color.black, 1.0f);
+        }
     }
 }

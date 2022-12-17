@@ -22,14 +22,14 @@ public class item : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ItemManager.instance.n = objectNumber;
     }
 
     // Update is called once per frame
     void Update()
     {
         //Debug.Log(isFlag);
-        ItemManager.instance.n = objectNumber;
+        
         if(isFlag == true){
             if(Input.GetKeyDown(KeyCode.F)){
                 itemObject = this.gameObject;
@@ -39,7 +39,7 @@ public class item : MonoBehaviour
                 objectNumber = GetItem(itemName).GetId();
                 //Debug.Log(objectNumber);
                 ItemManager.instance.n = objectNumber;
-                
+                ItemManager.instance.itemCountManager++;
                 
             }
             if (Input.GetMouseButtonDown(0)){

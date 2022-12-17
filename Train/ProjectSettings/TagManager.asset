@@ -65,3 +65,6 @@ TagManager:
   - name: ButtonImage
     uniqueID: 2305806343
     locked: 0
+  - name: CloseButtonImage
+    uniqueID: 377897355
+    locked: 0
