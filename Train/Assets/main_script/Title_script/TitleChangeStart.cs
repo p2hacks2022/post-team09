@@ -11,7 +11,7 @@ public class TitleChangeStart : MonoBehaviour
     AudioSource audioSource;
     void Start()
     {
-        //Component‚ðŽæ“¾
+        //Componentï¿½ï¿½ï¿½æ“¾
         audioSource = GetComponent<AudioSource>();
     }
     public void PressStart()
@@ -20,7 +20,7 @@ public class TitleChangeStart : MonoBehaviour
         if (!firstPush)
         {
             audioSource.PlayOneShot(sound1);
-            Initiate.Fade("Start", Color.black, 1.0f);
+            Initiate.Fade("prologue", Color.black, 1.0f);
             firstPush = true;
         }
     }

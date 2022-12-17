@@ -345,8 +345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 572.09, y: -264.16003}
-  m_SizeDelta: {x: -1566.94, y: -825.79}
+  m_AnchoredPosition: {x: 605.65, y: -264.91003}
+  m_SizeDelta: {x: -1499.81, y: -827.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264696076
 MonoBehaviour:
@@ -1440,8 +1440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.9099574, y: 82.76904}
-  m_SizeDelta: {x: 160, y: 33.77}
+  m_AnchoredPosition: {x: 9.63, y: 84.26}
+  m_SizeDelta: {x: 192.19, y: 32.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1681512781
 GameObject:
@@ -2091,7 +2091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 951896484383992100}
-  FootSound: {fileID: 8300000, guid: 71616b6fa44e8ab40b6e2ab77ff29a50, type: 3}
+  FootSound: {fileID: 8300000, guid: 6b3579c45f38dff479b3561d7108a595, type: 3}
 --- !u!70 &951896484383992102
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
