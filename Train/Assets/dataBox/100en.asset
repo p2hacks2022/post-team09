@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kindOfItem: 0
   icon: {fileID: 0}
+  id: 1
   itemName: 100en
+  Name: "100\u5186\u7389"
   text: "100\u5186\u7389\u3060\u3002"
   text2: "\u3061\u3087\u3063\u3068\u3046\u308C\u3057\u3044\u3002"
   text3: 

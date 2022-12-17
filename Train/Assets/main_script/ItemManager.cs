@@ -5,7 +5,21 @@ using UnityEngine;
 public class ItemManager : MonoBehaviour
 {
    public static ItemManager instance = null;
-   public int itemCount;
+   public int n = 16;
+   public int[] array = new int[17];
+
+
+   void Start()
+   {
+        for(int i = 0; i<array.Length; i++){
+            array[i] = 0;
+        }
+   }
+
+    void Update(){
+        //Debug.Log(n);
+        array[n] = 1;
+    }
 
      private void Awake()
      {

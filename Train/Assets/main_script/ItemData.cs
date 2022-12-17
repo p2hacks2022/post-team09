@@ -18,9 +18,15 @@ public class ItemData : ScriptableObject {
 	//　アイテムのアイコン
 	[SerializeField]
 	private Sprite icon;
-	//　アイテムの名前
+	//　オブジェクトのid
+	[SerializeField]
+	private int id;
+	//　オブジェクトの名前
 	[SerializeField]
 	private string itemName;
+	//　アイテムの名前
+	[SerializeField]
+	private string Name;
 	//　アイテムの情報
 	[SerializeField]
 	private string text;
@@ -50,9 +56,17 @@ public class ItemData : ScriptableObject {
 	public Sprite GetIcon() {
 		return icon;
 	}
+
+	public int GetId() {
+		return id;
+	}
  
 	public string GetItemName() {
 		return itemName;
+	}
+
+	public string GetName() {
+		return Name;
 	}
  
 	public string GetText() {
