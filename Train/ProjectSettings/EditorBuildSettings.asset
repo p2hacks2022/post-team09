@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nishimura/tyuuou_main 3.unity
     guid: 5605d3aa0ec723c4f841fe552d28b20d
+  - enabled: 1
+    path: Assets/Scenes/Nishimura/Start.unity
+    guid: ec206f845ab1b1c4898c8d850277be1e
   m_configObjects: {}
