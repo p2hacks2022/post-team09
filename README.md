@@ -72,7 +72,8 @@ Unity
 * MediBangPaint  
 * pintrest  
 * AviUtl  
-* DaVinci Resolve  
+* DaVinci Resolve 
+* Slack 
 * Notion  
 * discord  
 
