@@ -1086,11 +1086,15 @@ PrefabInstance:
     - target: {fileID: 951896483844946136, guid: 203b8adc29e4f0f4487edc6ff4b63df3, type: 3}
       propertyPath: FootSound
       value: 
-      objectReference: {fileID: 8300000, guid: 6b3579c45f38dff479b3561d7108a595, type: 3}
+      objectReference: {fileID: 8300000, guid: 71616b6fa44e8ab40b6e2ab77ff29a50, type: 3}
     - target: {fileID: 951896483844946137, guid: 203b8adc29e4f0f4487edc6ff4b63df3, type: 3}
       propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 951896483844946137, guid: 203b8adc29e4f0f4487edc6ff4b63df3, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 71616b6fa44e8ab40b6e2ab77ff29a50, type: 3}
     - target: {fileID: 951896483844946138, guid: 203b8adc29e4f0f4487edc6ff4b63df3, type: 3}
       propertyPath: panel
       value: 
